@@ -82,8 +82,8 @@ def main(_argv):
     # image = utils.draw_bbox(image_data*255, pred_bbox)
     image = Image.fromarray(image.astype(np.uint8))
     image.show()
-    image = cv2.cvtColor(np.array(image), cv2.COLOR_BGR2RGB)
-    cv2.imwrite(FLAGS.output, image)
+    # image = cv2.cvtColor(np.array(image), cv2.COLOR_BGR2RGB)
+    # cv2.imwrite(FLAGS.output, image)
 
 if __name__ == '__main__':
     try:

@@ -31,6 +31,23 @@ python detect.py --weights ./checkpoints/yolov4-tiny-416 --size 416 --model yolo
 ```
 If you want to run yolov3 or yolov3-tiny change ``--model yolov3`` in command
 
+###### Local Computer Test
+
+```bash
+# Get model of yolov4
+python save_model.py --weights C:/bd_ai/dli/yolo/yolov4.weights --output C:/bd_ai/dli/yolo/yolov4-416 --input_size 416 --model yolov4
+
+# Run demo of yolov4 
+python detect.py --weights C:/bd_ai/dli/yolo/yolov4-416 --size 416 --model yolov4 --image ./data/kite.jpg
+
+# Get model of yolov4-tiny
+python save_model.py --weights C:/bd_ai/dli/yolo/yolov4-tiny.weights --output C:/bd_ai/dli/yolo/yolov4-tiny-416 --input_size 416 --model yolov4 --tiny
+
+# Run demo tensorflow of yolov4-tiny
+python detect.py --weights C:/bd_ai/dli/yolo/yolov4-tiny-416 --size 416 --model yolov4 --image ./data/kite.jpg --tiny
+
+```
+
 #### Output
 
 ##### Yolov4 original weight
